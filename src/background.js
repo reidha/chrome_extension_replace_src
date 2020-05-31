@@ -22,8 +22,6 @@ chrome.storage.onChanged.addListener(function (data, area) {
             storageData.beforeCb = data.beforeCb.newValue;
         }
 
-        //storageData.originalUrl = "https://storage.googleapis.com/test_reidha/ce_test/no1.js";
-        //storageData.newUrl = "https://storage.googleapis.com/test_reidha/ce_test/no3.js";
         storageData.beforeCb = '?';
     }
 
