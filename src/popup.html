@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.muicss.com/mui-0.10.2/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.muicss.com/mui-0.10.2/js/mui.min.js"></script>
+
+    <style>
+        body {
+            width: 480px;
+            height: 640px;
+        }
+
+        #main {
+            margin: 20px 20px 20px 20px;
+        }
+
+        .mui-appbar--text {
+            display: flex;
+            height: 64px;
+            align-items: center;
+        }
+
+        .mui-btn {
+            width: 100px;
+        }
+
+        .mui-appbar--text {
+            padding: 0px 10px 0px 10px;
+        }
+
+        .mui-divider {
+            margin: 30px 0px 30px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mui-appbar">
+        <div class="mui--text-headline mui-appbar--text">Source Replacer</div>
+    </div>
+    <div id="main">
+        <button id="on-off-button" class="mui-btn mui-btn--raised"></button>
+
+        <div class="mui-divider"></div>
+
+        <form name="formTop" class="mui-form">
+            <div class="mui-textfield">
+                <input id="form-original-url" name="formOriginalUrl" type="url" placeholder="Original URL" required />
+            </div>
+            <div class="mui-textfield">
+                <input id="form-new-url" name="formNewUrl" type="url" placeholder="New URL" required />
+            </div>
+
+            <!--<div>
+                <input id="form-add-cb" name="formAddCb" value="form-add-cb" type="checkbox" />
+                <label for="form-add-cb">Add cache buster</label>
+            </div>-->
+            <button id="submit-button" type="submit" value="submit"
+                class="mui-btn mui-btn--raised mui-btn--primary">Save</button>
+        </form>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+{
+    "name": "Source Replacer",
+    "version": "1.0.0",
+    "description": "Replace src for debugging",
+    "permissions": [
+        "activeTab",
+        "storage",
+        "webRequest",
+        "webRequestBlocking",
+        "*://*/*"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": true
+    },
+    "browser_action": {
+        "default_title": "SRC Rep",
+        "default_popup": "popup.html",
+        "default_icon": "icon200.png"
+    },
+    "icons": {
+        "200": "icon200.png"
+    },
+    "content_security_policy": "script-src 'self' https://cdn.muicss.com; object-src 'self'",
+    "manifest_version": 2
+}
