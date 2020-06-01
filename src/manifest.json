@@ -1,9 +1,8 @@
 {
     "name": "Source Replacer",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "description": "Replace src for debugging",
     "permissions": [
-        "activeTab",
         "storage",
         "webRequest",
         "webRequestBlocking",
