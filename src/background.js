@@ -21,8 +21,6 @@ chrome.storage.onChanged.addListener(function (data, area) {
         if ('beforeCb' in data) {
             storageData.beforeCb = data.beforeCb.newValue;
         }
-
-        storageData.beforeCb = '?';
     }
 
     console.log('background.js | storage.onChanged | end');
